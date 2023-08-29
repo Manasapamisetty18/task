@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>College Admission Form</title>
+</head>
+<body>
+    <img src="https://www.campusoption.com/images/colleges/gallery/07_02_17_101838_College.JPG">
+    <h1>College Admission Form</h1>
+    <form action="submit.php" method="post">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </p>
+        <p>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+            </select>
+        </p>
+        <p>
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="">Select a branch</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+            </select>
+        </p>
+        <p>
+            <label for="marks">Marks (%):</label>
+            <input type="number" id="marks" name="marks" min="0" max="100" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>        
+    </form>    
+</body>    
+</html>
+
